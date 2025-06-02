@@ -123,7 +123,7 @@ npm install react-plotly.js plotly.js papaparse axios
 
 ```npm run dev```
 
-8.	Open the URL (e.g., http://localhost:5173) in a browser (e.g., Safari, Chrome, Firefox, etc.). You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
+8.	Open the URL (e.g., http://localhost:5173) in a browser (e.g., Chrome, Firefox, but **NOT Safari**.). You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
  
 # 3. Daily workflow (both systems)
 # A. Windows command
