@@ -1,20 +1,25 @@
 ### Symbolic-Regression-NASPSPA-2025
 
-1. Windows 11 (or 10) Guide
+# 1. Windows 11 (or 10) Guide
  
-A. One-time installations
-What	Why you need it	How to install
-Python 3.12+	Runs the Flask backend	1. Go to https://www.python.org → Downloads
+# A. One-time installations
+# Python 3.12+
+1. Go to https://www.python.org → Downloads
 2. Grab the Windows installer (64-bit).
 3. Important: tick “Add python.exe to PATH” in the first screen.
 4. Click Install Now.
-Julia 1.10+	Required by PySR	1. Go to https://julialang.org/downloads/
+
+# Julia 1.10+	Required by PySR
+1. Go to https://julialang.org/downloads/
 2. Download the 64-bit installer and run it (the defaults are fine).
 Node.js LTS	Runs the React frontend	1. Go to https://nodejs.org → LTS version
 2. Run the installer (npm is included)
-App	Runs the app	1. Go to https://github.com/SteveGaemi/Symbolic-Regression-NASPSPA-2025 
+
+# App	Runs the app
+1. Go to https://github.com/SteveGaemi/Symbolic-Regression-NASPSPA-2025 
 2. Click ‘<>Code’ (Green button)
 3. Click ‘Download ZIP’
+
 Restart your PC (so new PATH entries are picked up).
  
 B. Set up the backend (Python + Flask + PySR)
