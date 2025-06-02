@@ -111,31 +111,46 @@ Open a new Terminal tab after Homebrew finishes so PATH is updated.
  
 # B. Set up the backend
 1.	Create a folder named ‘pysr-app’
-mkdir -p ~/DesiredPath/pysr-app
-2.	Create a folder named ‘backend’ inside ‘pysr-app’
-mkdir -p ~/DesiredPath/pysr-app/backend
-cd ~/DesiredPath/pysr-app/backend
-3.	Copy main.py here (main.py should be in .\PySR GUI\backend\).
-4.	Create & activate a virtual environment:
-python3 -m venv venv
-source venv/bin/activate
-5.	Install the packages:
-python -m pip install --upgrade pip
-pip install flask flask-cors pandas numpy scikit-learn pysr numexpr
-6.	Run Flask:
-python main.py
-7.	Flask listens on http://127.0.0.1:5000; leave this Terminal window open.
--	macOS localhost:5000 may already be in use. Turn off Airplay receiver (System Preferences > General > Airdrop & Handoff)
+
+```mkdir -p ~/DesiredPath/pysr-app```
+
+3.	Create a folder named ‘backend’ inside ‘pysr-app’
+
+```mkdir -p ~/DesiredPath/pysr-app/backend```
+```cd ~/DesiredPath/pysr-app/backend```
+
+4.	Copy main.py here (main.py should be in .\PySR GUI\backend\).
+5.	Create & activate a virtual environment:
+   
+```python3 -m venv venv```
+```source venv/bin/activate```
+
+7.	Install the packages:
+
+```python -m pip install --upgrade pip```
+```pip install flask flask-cors pandas numpy scikit-learn pysr numexpr```
+
+8.	Run Flask:
+
+```python main.py```
+
+9.	Flask listens on http://127.0.0.1:5000; leave this Terminal window open. **macOS localhost:5000 may already be in use. Turn off Airplay receiver (System Preferences > General > Airdrop & Handoff)**
  
 # C. Set up the frontend
 1.	Open a second Terminal tab and go to the project root:
-cd ~/DesiredPath/pysr-app
+
+```cd ~/DesiredPath/pysr-app```
+
 2.	Create the React project:
-npm create vite@latest frontend -- --template react
-cd frontend
+
+```npm create vite@latest frontend -- --template react```
+```cd frontend```
+
 3.	Replace the App.jsx under the created React project with the App.jsx in the downloaded zip (It should be in \PySR GUI\frontend\).
 4.	Install dependencies:
-npm install react-plotly.js plotly.js papaparse axios
+
+```npm install react-plotly.js plotly.js papaparse axios```
+
 5.	Open package.json in the frontend folder and add the following line just before the "dependencies" block.
 
 ```"proxy": "http://localhost:5000",```
@@ -149,18 +164,28 @@ npm install react-plotly.js plotly.js papaparse axios
 # 3. Daily workflow (both systems)
 # A. Windows command
 1. Activate backend venv
-.\venv\Scripts\activate
+
+```.\venv\Scripts\activate```
+
 2. Start backend
-python main.py
+
+```python main.py```
+
 3. Start frontend
-npm run dev (inside frontend folder)
+
+```npm run dev (inside frontend folder)```
+
 # B. macOS command
 1. Activate backend venv
-source venv/bin/activate
+
+```source venv/bin/activate```
+
 2. Start backend
-python main.py
+
+```python main.py```
 3. Start frontend
-npm run dev (inside frontend folder)
+
+```npm run dev (inside frontend folder)```
 
 **Keep the two terminals open while you work.**
 **When you finish, press Ctrl + C in each terminal to stop the servers, then deactivate the venv with deactivate.**
