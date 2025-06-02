@@ -54,9 +54,11 @@ Restart your PC (so new PATH entries are picked up).
 # C. Set up the frontend (React)
 1.	Open a second command prompt window (keep the backend running in the first).
 2.	Create a React project inside ‘pysr-app’ (using Vite, lightweight & modern):
-cd C:\Users\YourName\Documents\pysr-app
-npm create vite@latest frontend -- --template react
-cd frontend
+
+```cd C:\Users\YourName\Documents\pysr-app```
+```npm create vite@latest frontend -- --template react```
+```cd frontend```
+
 3.	Copy your App.jsx into ‘frontend’ folder inside ‘pysr-app’ (overwrite frontend/src/App.jsx; App.jsx should be in .\PySR GUI\frontend\).
 4.	Install the React-side libraries:
 npm install
