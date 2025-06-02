@@ -17,7 +17,7 @@
 1. Go to https://nodejs.org → LTS version
 2. Run the installer (npm is included)
 
-# App	Runs the app
+# App
 1. Go to https://github.com/SteveGaemi/Symbolic-Regression-NASPSPA-2025 
 2. Click ‘<>Code’ (Green button)
 3. Click ‘Download ZIP’
