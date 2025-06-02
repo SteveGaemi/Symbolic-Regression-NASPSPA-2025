@@ -12,7 +12,9 @@
 # Julia 1.10+	Required by PySR
 1. Go to https://julialang.org/downloads/
 2. Download the 64-bit installer and run it (the defaults are fine).
-Node.js LTS	Runs the React frontend	1. Go to https://nodejs.org → LTS version
+
+# Node.js LTS	
+1. Go to https://nodejs.org → LTS version
 2. Run the installer (npm is included)
 
 # App	Runs the app
