@@ -27,7 +27,7 @@ Restart your PC (so new PATH entries are picked up).
 2.	Create a folder named ‘pysr-app’
 3.	Create a folder named ‘backend’ inside ‘pysr-app’
 4.	Choose the ‘backend’ folder, e.g.
-cd C:\Users\<YourName>\Documents\pysr-app\backend
+cd C:\Users\YourName\Documents\pysr-app\backend
 5.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
 6.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
 python -m venv venv
@@ -44,7 +44,7 @@ python main.py
 # C. Set up the frontend (React)
 1.	Open a second command prompt window (keep the backend running in the first).
 2.	Create a React project inside ‘pysr-app’ (using Vite, lightweight & modern):
-cd C:\Users\<YourName>\Documents\pysr-app
+cd C:\Users\YourName\Documents\pysr-app
 npm create vite@latest frontend -- --template react
 cd frontend
 3.	Copy your App.jsx into ‘frontend’ folder inside ‘pysr-app’ (overwrite frontend/src/App.jsx; App.jsx should be in .\PySR GUI\frontend\).
@@ -65,8 +65,8 @@ You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
 # Homebrew (package manager)
 1.	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 2.	Add homebrew path
--	echo >> /Users/<YourName>/.zprofile
--	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<YourName>/.zprofile
+-	echo >> /Users/YourName/.zprofile
+-	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/YourName/.zprofile
 -	eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Python 3.12+
@@ -87,10 +87,10 @@ Open a new Terminal tab after Homebrew finishes so PATH is updated.
  
 # B. Set up the backend
 1.	Create a folder named ‘pysr-app’
-mkdir -p ~/<DesiredPath>/pysr-app
+mkdir -p ~/DesiredPath/pysr-app
 2.	Create a folder named ‘backend’ inside ‘pysr-app’
-mkdir -p ~/<DesiredPath>/pysr-app/backend
-cd ~/<DesiredPath>//pysr-app/backend
+mkdir -p ~/DesiredPath/pysr-app/backend
+cd ~/DesiredPath/pysr-app/backend
 3.	Copy main.py here (main.py should be in .\PySR GUI\backend\).
 4.	Create & activate a virtual environment:
 python3 -m venv venv
@@ -105,7 +105,7 @@ python main.py
  
 # C. Set up the frontend
 1.	Open a second Terminal tab and go to the project root:
-cd ~/<DesiredPath>/pysr-app
+cd ~/DesiredPath/pysr-app
 2.	Create the React project:
 npm create vite@latest frontend --template react
 cd frontend
