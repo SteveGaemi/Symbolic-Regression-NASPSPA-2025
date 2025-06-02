@@ -37,13 +37,18 @@ Restart your PC (so new PATH entries are picked up).
 
    ```python -m venv venv```
    ```.\venv\Scripts\activate```
+   
 8.	(Your prompt will now start with (venv) — good.)
 9.	Upgrade pip and install requirements:
-python -m pip install --upgrade pip
-pip install flask flask-cors pandas numpy scikit-learn pysr numepxr
+
+```python -m pip install --upgrade pip```
+```pip install flask flask-cors pandas numpy scikit-learn pysr numepxr```
+
 -	The first pysr run will compile some Julia packages; let it finish.
 10.	Launch the back-end:
-python main.py
+
+```python main.py```
+
 11.	By default Flask starts on http://localhost:5000 and command prompt will keep showing its log; leave this window open.
  
 # C. Set up the frontend (React)
