@@ -119,10 +119,11 @@ npm install react-plotly.js plotly.js papaparse axios
 
 ```"proxy": "http://localhost:5000",```
 
-7.	Start Vite:
-npm run dev
-8.	Browse to the URL Vite prints (e.g., http://localhost:5173).
-You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
+7.	Start Vite by running the following line
+
+```npm run dev```
+
+8.	Open the URL (e.g., http://localhost:5173). You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
  
 # 3. Daily workflow (both systems)
 # A. Windows command
