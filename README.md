@@ -32,8 +32,9 @@ Restart your PC (so new PATH entries are picked up).
   
 6.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
 7.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
-python -m venv venv
-.\venv\Scripts\activate
+
+   ```python -m venv venv```
+   ```.\venv\Scripts\activate```
 8.	(Your prompt will now start with (venv) — good.)
 9.	Upgrade pip and install requirements:
 python -m pip install --upgrade pip
