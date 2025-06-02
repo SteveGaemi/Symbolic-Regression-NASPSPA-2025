@@ -105,7 +105,7 @@ python main.py
  
 # C. Set up the frontend
 1.	Open a second Terminal tab and go to the project root:
-cd ~/<desired path>/pysr-app
+cd ~/<DesiredPath>/pysr-app
 2.	Create the React project:
 npm create vite@latest frontend --template react
 cd frontend
