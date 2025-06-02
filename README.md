@@ -139,12 +139,15 @@ npm run dev (inside frontend folder)
 **Keep the two terminals open while you work.**
 **When you finish, press Ctrl + C in each terminal to stop the servers, then deactivate the venv with deactivate.**
  
-Troubleshooting quick hits
-Symptom	Likely fix
-“python not found”	Re-open command prompt / Terminal so PATH refreshes, or reinstall Python and ensure “Add to PATH” is ticked.
-Flask says port 5000 already in use	Close other Flask instances or run python main.py --port 5001 and update the "proxy" accordingly.
-First PySR run hangs on “Compiling…”	That’s normal the very first time; PySR builds its Julia packages (can take several minutes).
-React cannot fetch http://localhost:5000/...	Check that the backend console shows “Running on http://127.0.0.1:5000”; also verify the proxy line is in package.json, then restart npm run dev.
+# Common troubleshooting and solutions
+1. “python not found"
+- Re-open command prompt / Terminal so PATH refreshes, or reinstall Python and ensure “Add to PATH” is ticked.
+2. Flask says port 5000 already in use
+- Close other Flask instances or run python main.py --port 5001 and update the "proxy" accordingly.
+3. First PySR run hangs on “Compiling…”
+- That’s normal the very first time; PySR builds its Julia packages (can take several minutes).
+4. React cannot fetch http://localhost:5000/...
+- Check that the backend console shows “Running on http://127.0.0.1:5000”; also verify the proxy line is in package.json, then restart npm run dev.
  
 ✨ Tip: Installing Visual Studio Code lets you open the whole pysr-app folder, run integrated terminals, and debug both Python (with the Python extension) and React (via the JavaScript/TypeScript Nightly extension) from one window.
 
