@@ -61,8 +61,9 @@ Restart your PC (so new PATH entries are picked up).
 
 3.	Copy your App.jsx into ‘frontend’ folder inside ‘pysr-app’ (overwrite frontend/src/App.jsx; App.jsx should be in .\PySR GUI\frontend\).
 4.	Install the React-side libraries:
-npm install
-npm install react-plotly.js plotly.js papaparse axios
+
+```npm install```
+```npm install react-plotly.js plotly.js papaparse axios```
 
 5.	Tell React where the API lives – add this line to frontend/package.json just before "dependencies" (one time only):
 "proxy": "http://localhost:5000",
