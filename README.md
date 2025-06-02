@@ -86,26 +86,28 @@ brew install node
 Open a new Terminal tab after Homebrew finishes so PATH is updated.
  
 # B. Set up the backend
-1.	Create a project folder:
-mkdir -p ~/<desired path>/pysr-app/backend
-cd ~/<desired path>//pysr-app/backend
-2.	Copy main.py here (main.py should be in .\PySR GUI\backend\).
-3.	Create & activate a virtual environment:
+1.	Create a folder named ‘pysr-app’
+mkdir -p ~/<DesiredPath>/pysr-app
+2.	Create a folder named ‘backend’ inside ‘pysr-app’
+mkdir -p ~/<DesiredPath>/pysr-app/backend
+cd ~/<DesiredPath>//pysr-app/backend
+3.	Copy main.py here (main.py should be in .\PySR GUI\backend\).
+4.	Create & activate a virtual environment:
 python3 -m venv venv
 source venv/bin/activate
-4.	Install the packages:
+5.	Install the packages:
 python -m pip install --upgrade pip
 pip install flask flask-cors pandas numpy scikit-learn pysr numexpr
-5.	Run Flask:
+6.	Run Flask:
 python main.py
-6.	Flask listens on http://127.0.0.1:5000; leave this Terminal window open.
+7.	Flask listens on http://127.0.0.1:5000; leave this Terminal window open.
 -	macOS localhost:5000 may already be in use. Turn off Airplay receiver (System Preferences > General > Airdrop & Handoff)
  
 # C. Set up the frontend
 1.	Open a second Terminal tab and go to the project root:
 cd ~/<desired path>/pysr-app
 2.	Create the React project:
-npm create vite@latest frontend -- --template react
+npm create vite@latest frontend --template react
 cd frontend
 3.	Replace src/App.jsx with App.jsx in .\PySR GUI\frontend\.
 4.	Install dependencies:
