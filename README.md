@@ -27,19 +27,21 @@ Restart your PC (so new PATH entries are picked up).
 2.	Create a folder named ‘pysr-app’
 3.	Create a folder named ‘backend’ inside ‘pysr-app’
 4.	Choose the ‘backend’ folder
+
    ```cd C:\Users\YourName\Documents\pysr-app\backend```
-7.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
-8.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
+  
+6.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
+7.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
 python -m venv venv
 .\venv\Scripts\activate
-9.	(Your prompt will now start with (venv) — good.)
-10.	Upgrade pip and install requirements:
+8.	(Your prompt will now start with (venv) — good.)
+9.	Upgrade pip and install requirements:
 python -m pip install --upgrade pip
 pip install flask flask-cors pandas numpy scikit-learn pysr numepxr
 -	The first pysr run will compile some Julia packages; let it finish.
-9.	Launch the back-end:
+10.	Launch the back-end:
 python main.py
-10.	By default Flask starts on http://localhost:5000 and command prompt will keep showing its log; leave this window open.
+11.	By default Flask starts on http://localhost:5000 and command prompt will keep showing its log; leave this window open.
  
 # C. Set up the frontend (React)
 1.	Open a second command prompt window (keep the backend running in the first).
@@ -112,9 +114,8 @@ cd frontend
 3.	Replace the App.jsx under the created React project with the App.jsx in the downloaded zip (It should be in \PySR GUI\frontend\).
 4.	Install dependencies:
 npm install react-plotly.js plotly.js papaparse axios
-5.	Add the proxy (so React calls the Flask API without CORS headaches): open package.json and insert
+5.	Add the following line just before the "dependencies" block inside package.json in the frontend folder.
 "proxy": "http://localhost:5000",
-6.	just before the "dependencies" block.
 7.	Start Vite:
 npm run dev
 8.	Browse to the URL Vite prints (e.g., http://localhost:5173).
