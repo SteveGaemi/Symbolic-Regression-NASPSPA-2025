@@ -78,22 +78,28 @@ You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
 
 # Homebrew (package manager)
 1. Open Terminal and copy the following line into Terminal
+
 ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
-3.	Add homebrew path by copying the following lines into Terminal. **Make sure to change YourName with the username of your pc.**
+
+2.	Add homebrew path by copying the following lines into Terminal. **Make sure to change YourName with the username of your pc.**
+
 ```echo >> /Users/YourName/.zprofile```
 ```echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/YourName/.zprofile```
 ```eval "$(/opt/homebrew/bin/brew shellenv)"```
 
 # Python 3.12+
 1. Copy the following line into Terminal
+   
 ```brew install python```
 
 # Julia 1.10+
 1. Copy the following line into Terminal
+   
 ```brew install --cask julia```
 
 # Node.js LTS
 1. Copy the following line into Terminal
+   
 ```brew install node```
 
 # App
