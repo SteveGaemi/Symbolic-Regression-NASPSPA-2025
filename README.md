@@ -26,7 +26,8 @@ Restart your PC (so new PATH entries are picked up).
 1.	Open Command Prompt (press ⊞ Win → type “command prompt” → Run).
 2.	Create a folder named ‘pysr-app’
 3.	Create a folder named ‘backend’ inside ‘pysr-app’
-4.	Choose the ‘backend’ folder,
+4.	Choose the ‘backend’ folder
+   
 cd C:\Users\YourName\Documents\pysr-app\backend
 7.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
 8.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
