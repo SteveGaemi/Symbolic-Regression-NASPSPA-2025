@@ -65,7 +65,7 @@ You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
 # Homebrew (package manager)
 1.	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 2.	Add homebrew path
--	echo >> /Users/ericshin/.zprofile
+-	echo >> /Users/<YourName>/.zprofile
 -	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<YourName>/.zprofile
 -	eval "$(/opt/homebrew/bin/brew shellenv)"
 
