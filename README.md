@@ -122,15 +122,22 @@ You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
  
 # 3. Daily workflow (both systems)
 # A. Windows command
-1. Activate backend
-venv	.\venv\Scripts\activate
-2. 
-macOS command
-Activate backend venv	.\venv\Scripts\activate	source venv/bin/activate
-Start backend	python main.py	python main.py
-Start frontend	npm run dev (inside frontend folder)	npm run dev (inside frontend folder)
-Keep the two terminals open while you work.
-When you finish, press Ctrl + C in each terminal to stop the servers, then deactivate the venv with deactivate.
+1. Activate backend venv
+.\venv\Scripts\activate
+2. Start backend
+python main.py
+3. Start frontend
+npm run dev (inside frontend folder)
+# B. macOS command
+1. Activate backend venv
+source venv/bin/activate
+2. Start backend
+python main.py
+3. Start frontend
+npm run dev (inside frontend folder)
+
+**Keep the two terminals open while you work.**
+**When you finish, press Ctrl + C in each terminal to stop the servers, then deactivate the venv with deactivate.**
  
 Troubleshooting quick hits
 Symptom	Likely fix
