@@ -115,7 +115,9 @@ cd frontend
 4.	Install dependencies:
 npm install react-plotly.js plotly.js papaparse axios
 5.	Add the following line just before the "dependencies" block inside package.json in the frontend folder.
+
 "proxy": "http://localhost:5000",
+
 7.	Start Vite:
 npm run dev
 8.	Browse to the URL Vite prints (e.g., http://localhost:5173).
