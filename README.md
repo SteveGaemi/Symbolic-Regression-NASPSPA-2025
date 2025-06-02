@@ -32,24 +32,25 @@ Restart your PC (so new PATH entries are picked up).
 
    ```cd C:\Users\YourName\Documents\pysr-app\backend```
   
-6.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
-7.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
+5.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
+6.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
 
    ```python -m venv venv```
    ```.\venv\Scripts\activate```
    
-8.	(Your prompt will now start with (venv) — good.)
-9.	Upgrade pip and install requirements:
+7.	(Your prompt will now start with (venv) — good.)
+8.	Upgrade pip and install requirements:
 
 ```python -m pip install --upgrade pip```
 ```pip install flask flask-cors pandas numpy scikit-learn pysr numepxr```
 
--	The first pysr run will compile some Julia packages; let it finish.
-10.	Launch the back-end:
+**The first pysr run will compile some Julia packages; let it finish.**
+
+9.	Launch the back-end:
 
 ```python main.py```
 
-11.	By default Flask starts on http://localhost:5000 and command prompt will keep showing its log; leave this window open.
+10.	By default Flask starts on http://localhost:5000 and command prompt will keep showing its log; leave this window open.
  
 # C. Set up the frontend (React)
 1.	Open a second command prompt window (keep the backend running in the first).
@@ -65,12 +66,15 @@ Restart your PC (so new PATH entries are picked up).
 ```npm install```
 ```npm install react-plotly.js plotly.js papaparse axios```
 
-5.	Tell React where the API lives – add this line to frontend/package.json just before "dependencies" (one time only):
-"proxy": "http://localhost:5000",
+5.	Open package.json in the frontend folder and add the following line just before the "dependencies" block.
+
+```"proxy": "http://localhost:5000",```
+
 6.	Start the dev server:
-npm run dev
-7.	Vite prints a local URL (typically http://localhost:5173). Open it in a browser — you should see the UI.
-You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
+
+```npm run dev```
+
+7.	Open the URL (e.g., http://localhost:5173) in a browser (e.g., Chrome, Firefox, but **NOT Safari**.). You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
  
 # 2. MacOS (12 Monterey, 13 Ventura, 14 Sonoma) Guide
 
@@ -114,27 +118,27 @@ Open a new Terminal tab after Homebrew finishes so PATH is updated.
 
 ```mkdir -p ~/DesiredPath/pysr-app```
 
-3.	Create a folder named ‘backend’ inside ‘pysr-app’
+2.	Create a folder named ‘backend’ inside ‘pysr-app’
 
 ```mkdir -p ~/DesiredPath/pysr-app/backend```
 ```cd ~/DesiredPath/pysr-app/backend```
 
-4.	Copy main.py here (main.py should be in .\PySR GUI\backend\).
-5.	Create & activate a virtual environment:
+3.	Copy main.py here (main.py should be in .\PySR GUI\backend\).
+4.	Create & activate a virtual environment:
    
 ```python3 -m venv venv```
 ```source venv/bin/activate```
 
-7.	Install the packages:
+5.	Install the packages:
 
 ```python -m pip install --upgrade pip```
 ```pip install flask flask-cors pandas numpy scikit-learn pysr numexpr```
 
-8.	Run Flask:
+6.	Run Flask:
 
 ```python main.py```
 
-9.	Flask listens on http://127.0.0.1:5000; leave this Terminal window open. **macOS localhost:5000 may already be in use. Turn off Airplay receiver (System Preferences > General > Airdrop & Handoff)**
+7.	Flask listens on http://127.0.0.1:5000; leave this Terminal window open. **macOS localhost:5000 may already be in use. Turn off Airplay receiver (System Preferences > General > Airdrop & Handoff)**
  
 # C. Set up the frontend
 1.	Open a second Terminal tab and go to the project root:
@@ -155,11 +159,11 @@ Open a new Terminal tab after Homebrew finishes so PATH is updated.
 
 ```"proxy": "http://localhost:5000",```
 
-7.	Start Vite by running the following line
+6.	Start Vite by running the following line
 
 ```npm run dev```
 
-8.	Open the URL (e.g., http://localhost:5173) in a browser (e.g., Chrome, Firefox, but **NOT Safari**.). You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
+7.	Open the URL (e.g., http://localhost:5173) in a browser (e.g., Chrome, Firefox, but **NOT Safari**.). You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
  
 # 3. Daily workflow (both systems)
 # A. Windows command
