@@ -109,7 +109,7 @@ cd ~/DesiredPath/pysr-app
 2.	Create the React project:
 npm create vite@latest frontend -- --template react
 cd frontend
-3.	Replace the App.jsx under the created React project with App.jsx in the downloaded zip (It should be in \PySR GUI\frontend\).
+3.	Replace the App.jsx under the created React project with the App.jsx in the downloaded zip (It should be in \PySR GUI\frontend\).
 4.	Install dependencies:
 npm install react-plotly.js plotly.js papaparse axios
 5.	Add the proxy (so React calls the Flask API without CORS headaches): open package.json and insert
