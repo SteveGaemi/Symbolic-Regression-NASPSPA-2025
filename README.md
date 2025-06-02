@@ -26,14 +26,14 @@ Restart your PC (so new PATH entries are picked up).
 1.	Open Command Prompt (press ⊞ Win → type “command prompt” → Run).
 2.	Create a folder named ‘pysr-app’
 3.	Create a folder named ‘backend’ inside ‘pysr-app’
-4.	Choose the ‘backend’ folder, e.g.
+4.	Choose the ‘backend’ folder,
 cd C:\Users\YourName\Documents\pysr-app\backend
-5.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
-6.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
+7.	Extract main.py into this folder (main.py should be in .\PySR GUI\backend\).
+8.	Create and activate a virtual environment inside ‘backend’ (keeps packages isolated):
 python -m venv venv
 .\venv\Scripts\activate
-7.	(Your prompt will now start with (venv) — good.)
-8.	Upgrade pip and install requirements:
+9.	(Your prompt will now start with (venv) — good.)
+10.	Upgrade pip and install requirements:
 python -m pip install --upgrade pip
 pip install flask flask-cors pandas numpy scikit-learn pysr numepxr
 -	The first pysr run will compile some Julia packages; let it finish.
