@@ -120,8 +120,12 @@ npm run dev
 8.	Browse to the URL Vite prints (e.g., http://localhost:5173).
 You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
  
-3. Daily workflow (both systems)
-Task	Windows command	macOS command
+# 3. Daily workflow (both systems)
+# A. Windows command
+1. Activate backend
+venv	.\venv\Scripts\activate
+2. 
+macOS command
 Activate backend venv	.\venv\Scripts\activate	source venv/bin/activate
 Start backend	python main.py	python main.py
 Start frontend	npm run dev (inside frontend folder)	npm run dev (inside frontend folder)
