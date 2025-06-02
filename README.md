@@ -107,7 +107,7 @@ python main.py
 1.	Open a second Terminal tab and go to the project root:
 cd ~/DesiredPath/pysr-app
 2.	Create the React project:
-npm create vite@latest frontend --template react
+npm create vite@latest frontend -- --template react
 cd frontend
 3.	Replace src/App.jsx with App.jsx in .\PySR GUI\frontend\.
 4.	Install dependencies:
