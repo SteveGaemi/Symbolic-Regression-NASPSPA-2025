@@ -114,9 +114,9 @@ cd frontend
 3.	Replace the App.jsx under the created React project with the App.jsx in the downloaded zip (It should be in \PySR GUI\frontend\).
 4.	Install dependencies:
 npm install react-plotly.js plotly.js papaparse axios
-5.	Add the following line just before the "dependencies" block inside package.json in the frontend folder.
+5.	Open package.json in the frontend folder and add the following line just before the "dependencies" block.
 
-"proxy": "http://localhost:5000",
+```"proxy": "http://localhost:5000",```
 
 7.	Start Vite:
 npm run dev
