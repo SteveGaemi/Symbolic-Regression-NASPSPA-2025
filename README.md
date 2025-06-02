@@ -22,7 +22,7 @@ Node.js LTS	Runs the React frontend	1. Go to https://nodejs.org → LTS version
 
 Restart your PC (so new PATH entries are picked up).
  
-B. Set up the backend (Python + Flask + PySR)
+# B. Set up the backend (Python + Flask + PySR)
 1.	Open Command Prompt (press ⊞ Win → type “command prompt” → Run).
 2.	Create a folder named ‘pysr-app’
 3.	Create a folder named ‘backend’ inside ‘pysr-app’
@@ -41,9 +41,7 @@ pip install flask flask-cors pandas numpy scikit-learn pysr numepxr
 python main.py
 10.	By default Flask starts on http://localhost:5000 and command prompt will keep showing its log; leave this window open.
  
-C. Set up the 
-frontend
- (React)
+# C. Set up the frontend (React)
 1.	Open a second command prompt window (keep the backend running in the first).
 2.	Create a React project inside ‘pysr-app’ (using Vite, lightweight & modern):
 cd C:\Users\<YourName>\Documents\pysr-app
@@ -61,25 +59,33 @@ npm run dev
 7.	Vite prints a local URL (typically http://localhost:5173). Open it in a browser — you should see the UI.
 You’re done! Upload a CSV, pick variables, and click Run to watch PySR crank.
  
-2. macOS (12 Monterey, 13 Ventura, 14 Sonoma) Guide
+# 2. MacOS (12 Monterey, 13 Ventura, 14 Sonoma) Guide
 
-A. One-time installations
-What	Quick method
-Homebrew (package manager)	1.	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# A. One-time installations
+# Homebrew (package manager)
+1.	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 2.	Add homebrew path
 -	echo >> /Users/ericshin/.zprofile
--	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ericshin/.zprofile
+-	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<YourName>/.zprofile
 -	eval "$(/opt/homebrew/bin/brew shellenv)"
-Python 3.12+	brew install python
-Julia 1.10+	brew install --cask julia
-Node.js LTS	brew install node
-App	1. Go to https://github.com/SteveGaemi/Symbolic-Regression-NASPSPA-2025 
+
+# Python 3.12+
+brew install python
+
+# Julia 1.10+
+brew install --cask julia
+
+# Node.js LTS
+brew install node
+
+# App
+1. Go to https://github.com/SteveGaemi/Symbolic-Regression-NASPSPA-2025 
 2. Click ‘<>Code’ (Green button)
 3. Click ‘Download ZIP’
+
 Open a new Terminal tab after Homebrew finishes so PATH is updated.
  
-B. Set up the 
-backend
+# B. Set up the backend
 1.	Create a project folder:
 mkdir -p ~/<desired path>/pysr-app/backend
 cd ~/<desired path>//pysr-app/backend
@@ -95,8 +101,7 @@ python main.py
 6.	Flask listens on http://127.0.0.1:5000; leave this Terminal window open.
 -	macOS localhost:5000 may already be in use. Turn off Airplay receiver (System Preferences > General > Airdrop & Handoff)
  
-C. Set up the 
-frontend
+# C. Set up the frontend
 1.	Open a second Terminal tab and go to the project root:
 cd ~/<desired path>/pysr-app
 2.	Create the React project:
